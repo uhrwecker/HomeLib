@@ -55,6 +55,7 @@ class Library():
 
 	def _print_entry(self, entry):
 		e = entry.get_config()
+		print('----------------------------------------------------------------------------')
 		print('Added Entry:')
 		print('{} by {}'.format(e['title'], e['author']))
 		print('\t -- date: {}'.format(e['date']))
@@ -64,12 +65,20 @@ class Library():
 		print('\t -- publisher: {}'.format(e['publisher']))
 		print('\t -- price: {}'.format(e['price']))
 		print('(referenced by {})'.format(e['id']))
+		print('----------------------------------------------------------------------------')
+
+	def _print_general_state(self):
+		print('----------------------------------------------------------------------------')
+		print('General state of library:')
+		print('\t -- number of entries: {}'.format(len(self.library)))
+		print('----------------------------------------------------------------------------')
 
 
 a = Library(verbose=True)
 a.add_entry('Codex Alera: Die Elementare von Calderon', 'Jim Butcher', 2013, owner='Jan-Menno',
 			pages=605, publisher='blanvalet', price=9.99)
 a.save_lib()
+a._print_general_state()
 
 
 
