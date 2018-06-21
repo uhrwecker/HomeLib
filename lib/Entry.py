@@ -1,7 +1,7 @@
 class Entry():
 	
-	def __init__(self, title, author, date, owner='', pages=0, genre=[], language='Deutsch', 
-				 publisher='', price=0.):
+	def __init__(self, title='', author='', date=0, owner='', pages=0, 
+		     genre=[], language='Deutsch', publisher='', price=0.):
 		self.title = title
 		self.author = author
 		self.date = date
@@ -29,4 +29,14 @@ class Entry():
 		
 		return(cnfg)
 
-	
+	def set_attr(self, attr):
+		self.title = attr['title']
+		self.author = attr['author']
+		self.date = attr['date']
+		self.owner = attr['owner']
+		self.pages = attr['pages']
+		self.language = attr['language']
+		self.publisher = attr['publisher']
+		self.price = attr['price']
+
+		self.id = self.title[:5] + self.author[:5] + str(self.date)

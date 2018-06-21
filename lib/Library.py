@@ -37,6 +37,7 @@ class Library():
 				for attr in self.library_dict[entry_id]:
 					if str(search) in str(self.library_dict[entry_id][attr]):
 						all_states.append((entry_id, attr, self.library_obj[entry_id]))
+						
 			else:
 				if str(search) in str(self.library[entry_id][by]):
 						all_states.append((entry_id, by, self.library_obj[entry_id]))
@@ -53,7 +54,7 @@ class Library():
 
 	def edit_entry(self, entry_id, attr, change):
 		self.library_dict[entry_id][attr] = change
-		#self.library_obj[entry_id].set_attr(attr, value)
+		self.library_obj[entry_id].set_attr(self.library_dict[entry_dict])
 	
 	def init_library_dict(self, fp):
 		fobj = open(fp, 'r')
@@ -65,8 +66,8 @@ class Library():
 		dic = dict()
 		for ent_id in lib:
 			l = lib[ent_id]
-			entry = Entry(l['title'], l['author'], l['date'], owner=l['owner'], pages=l['pages'],
-						  language=l['language'], publisher=l['publisher'], price=l['price'])
+			entry = Entry()
+			entry.set_attr(l)
 			dic[ent_id] = entry	
 		return(dic)
 
@@ -75,7 +76,8 @@ class Library():
 		
 		fobj = open(fp, 'w')
 		# create sample entry:
-		entry = Entry('Harry Potter und der Halbblutprinz', 'Joanne K. Rowling', 2005)
+		entry = Entry(title='Harry Potter und der Halbblutprinz', 
+					  author='Joanne K. Rowling', date=2005)
 		if self.verbose:
 			self._print_entry(entry)
 		write_dict = dict()
@@ -102,14 +104,6 @@ class Library():
 		print('General state of library:')
 		print('\t -- number of entries: {}'.format(len(self.library_dict)))
 		print('----------------------------------------------------------------------------')
-
-
-a = Library(verbose=True)
-a.add_entry('Codex Alera: Die Elementare von Calderon', 'Jim Butcher', 2013, owner='Jan-Menno',
-			pages=605, publisher='blanvalet', price=9.99)
-a.save_lib()
-a._print_general_state()
-a.search('Harry')
 
 
 
