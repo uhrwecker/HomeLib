@@ -1,4 +1,4 @@
-from Entry import Entry
+from lib.entry import Entry
 import json
 import os
 
@@ -24,6 +24,13 @@ class Library():
 		self.library_dict[ent_dict['id']] = ent_dict
 		self.library_obj[ent_dict['id']] = entry
 		return(0)
+
+	def edit_entry(self, entry_id, attr, change):
+		self.library_dict[entry_id][attr] = change
+		self.library_obj[entry_id].set_attr(self.library_dict[entry_dict])
+	
+	def remove(entry_id):
+		del self.library_dict[entry_id], self.library_obj[entry_id]
 
 	def save_lib(self):
 		fobj = open(self.fp, 'w')
@@ -51,10 +58,6 @@ class Library():
 
 	def get_lib(self):
 		return(self.library_obj)
-
-	def edit_entry(self, entry_id, attr, change):
-		self.library_dict[entry_id][attr] = change
-		self.library_obj[entry_id].set_attr(self.library_dict[entry_dict])
 	
 	def init_library_dict(self, fp):
 		fobj = open(fp, 'r')
