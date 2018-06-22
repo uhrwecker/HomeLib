@@ -1,7 +1,22 @@
 {
+    "1900": {
+        "author": "",
+        "date": "1900",
+        "genre": [
+            ""
+        ],
+        "id": "1900",
+        "language": "",
+        "owner": "",
+        "pages": null,
+        "price": null,
+        "publisher": "",
+        "title": ""
+    },
     "HarryJoann2005": {
         "author": "Joanne K. Rowling",
         "date": 2005,
+        "genre": [],
         "id": "HarryJoann2005",
         "language": "Deutsch",
         "owner": "",

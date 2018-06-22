@@ -22,6 +22,7 @@ class Entry():
 		cnfg['date'] = self.date
 		cnfg['owner'] = self.owner
 		cnfg['pages'] = self.pages
+		cnfg['genre'] = self.genre
 		cnfg['language'] = self.language
 		cnfg['publisher'] = self.publisher
 		cnfg['price'] = self.price
@@ -35,6 +36,7 @@ class Entry():
 		self.date = attr['date']
 		self.owner = attr['owner']
 		self.pages = attr['pages']
+		self.genre = attr['genre']
 		self.language = attr['language']
 		self.publisher = attr['publisher']
 		self.price = attr['price']
