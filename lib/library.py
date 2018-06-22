@@ -11,19 +11,16 @@ class Library():
 		if not os.path.isfile(self.fp):
 			self.init_save(self.fp)
 	
-		self.library_dict = self.init_library_dict(self.fp)
-		self.library_obj = self.init_library_obj(self.library_dict)
+		self.load_lib(self.fp)
 
-	def add_entry(self, title, author, date, owner='', pages=0, 
-		      genre=[], language='Deutsch', publisher='', price=0.):
-		entry = Entry(title, author, date, owner, pages, genre, language, 
-			      publisher, price)
+	def add_entry(self, dic):
+		entry = Entry()
+		entry.set_attr(dic)
 		if self.verbose:
 			self._print_entry(entry)
 		ent_dict = entry.get_config()
 		self.library_dict[ent_dict['id']] = ent_dict
 		self.library_obj[ent_dict['id']] = entry
-		return(0)
 
 	def edit_entry(self, entry_id, attr, change):
 		self.library_dict[entry_id][attr] = change
@@ -32,10 +29,14 @@ class Library():
 	def remove(entry_id):
 		del self.library_dict[entry_id], self.library_obj[entry_id]
 
-	def save_lib(self):
-		fobj = open(self.fp, 'w')
+	def save_lib(self, fp):
+		fobj = open(fp, 'w')
 		json.dump(self.library_dict, fobj, indent=4, sort_keys=True)
 		fobj.close()
+
+	def load_lib(self, fp):
+		self.library_dict = self.init_library_dict(fp)
+		self.library_obj = self.init_library_obj(self.library_dict)
 
 	def search(self, search, by='all'):
 		all_states = list()

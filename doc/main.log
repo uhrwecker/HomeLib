@@ -16,3 +16,164 @@
 2018-06-22 12:19:52,156 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
 2018-06-22 12:22:14,697 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
 2018-06-22 12:22:23,940 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 14:31:50,032 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:31:55,484 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 14:41:02,437 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:41:15,327 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:41:18,658 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:41:20,216 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:42:31,413 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:42:35,924 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:42:38,008 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:42:59,885 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:43:03,132 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:43:05,374 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:45:29,539 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:45:34,385 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:45:35,754 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:46:05,275 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:46:08,499 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:46:09,757 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:46:25,587 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:46:32,951 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:46:35,266 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:46:45,076 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:47:44,063 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:47:45,690 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:47:58,717 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:48:08,700 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:48:09,978 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:48:20,665 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 14:49:16,907 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 14:49:17,865 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 14:49:21,484 appJar:INFO: [Line 28->2068/stop]: --- GUI stopped ---
+2018-06-22 17:09:20,071 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:09:25,873 appJar:WARNING: [Line 32->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:09:44,215 appJar:INFO: [Line 38->2068/stop]: --- GUI stopped ---
+2018-06-22 17:10:35,659 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:10:52,626 appJar:INFO: [Line 39->2068/stop]: --- GUI stopped ---
+2018-06-22 17:19:20,039 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:19:23,685 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:19:37,646 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:19:40,326 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:19:41,432 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:19:45,751 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:20:00,586 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:20:03,525 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:20:06,261 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:22:34,746 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:22:35,930 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:22:50,016 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:23:27,348 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:23:27,984 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:23:32,794 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:23:58,828 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:23:59,511 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:24:21,528 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:24:22,276 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:24:24,370 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:24:33,072 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:25:23,083 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:25:24,151 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:25:38,584 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:31:17,534 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:31:19,221 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:31:22,832 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:31:31,982 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:31:33,018 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:31:48,060 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:31:50,751 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:31:52,184 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:32:45,679 appJar:INFO: [Line 42->2068/stop]: --- GUI stopped ---
+2018-06-22 17:42:38,037 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:42:39,254 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:49:22,269 appJar:INFO: [Line 43->2068/stop]: --- GUI stopped ---
+2018-06-22 17:49:25,495 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:49:27,785 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:50:42,394 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:50:43,087 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:50:44,985 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:50:59,181 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 17:55:14,215 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:55:15,470 appJar:WARNING: [Line 33->2283/setSize]: Specified dimensions (300, 400) less than requested dimensions (378, 265)
+2018-06-22 17:55:58,763 appJar:INFO: [Line 53->2068/stop]: --- GUI stopped ---
+2018-06-22 17:56:55,012 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 17:57:03,912 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:02:05,254 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:02:13,771 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:03:26,608 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:03:36,619 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:03:50,710 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:04:30,285 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:04:32,852 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:05:05,631 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:05:08,303 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:05:22,939 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:05:31,009 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:05:41,433 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:06:14,152 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:06:22,008 appJar:INFO: [Line 60->2068/stop]: --- GUI stopped ---
+2018-06-22 18:06:30,314 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:07:15,588 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:07:23,097 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:08:07,717 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:08:23,141 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:08:36,302 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:54:17,176 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:55:08,800 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:55:12,004 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:56:04,250 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:56:07,260 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:56:34,098 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:57:23,891 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:57:48,647 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 18:58:44,748 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 18:59:06,339 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:00:39,497 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:00:58,321 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:03:03,793 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:03:31,039 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:03:34,177 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:03:44,717 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:04:03,650 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:04:15,936 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:04:20,057 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:04:54,369 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:04:57,701 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:07:15,650 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:07:18,462 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:07:41,260 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:07:43,286 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:07:53,471 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:08:47,944 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:08:56,774 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:11:47,964 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:12:36,853 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:12:38,712 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:15:49,855 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:15:52,568 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:16:01,376 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:21:30,241 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:22:17,418 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:22:58,309 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:23:06,186 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:23:27,612 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:23:36,621 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:26:11,814 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:26:36,066 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:26:39,103 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:26:58,483 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:26:59,191 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:29:46,320 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:29:47,975 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:30:00,241 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:31:09,813 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:31:15,376 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:31:43,712 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:31:54,756 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:32:05,625 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:33:11,280 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:33:13,498 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:34:21,036 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
+2018-06-22 19:34:24,352 appJar:INFO: [Line 12->1588/setLogFile]: Switched to logFile: ./doc/main.log
+2018-06-22 19:34:42,668 appJar:INFO: [Line 29->2068/stop]: --- GUI stopped ---
