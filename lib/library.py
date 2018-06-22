@@ -4,7 +4,7 @@ import os
 
 class Library():
 	
-	def __init__(self, save_fp='./save.json', verbose=False):
+	def __init__(self, save_fp='./doc/save.json', verbose=False):
 
 		self.fp = save_fp
 		self.verbose = verbose
