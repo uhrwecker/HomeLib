@@ -9,6 +9,7 @@ class App():
 		self.root = appjar.gui()
 		self.main_window(self.root)
 		self.window_add_entry()
+		self.window_chg_entry()
 		self.run()
 
 	def main_window(self, app, fp='./doc/main.log'):
@@ -31,6 +32,7 @@ class App():
 		app.createMenu('Edit')
 		app.addMenuItem('Edit', 'Add Entry', func=self.open_add_entry, shortcut='Control-d')
 		app.addMenuItem('Edit', 'Delete selected item', func=self.delete_entry, shortcut='Control-x')
+		app.addMenuItem('Edit', 'Edit selected item', func=self.open_chg_entry, shortcut='Control-e')
 
 		app.createMenu('View')
 		app.addSubMenu('View', 'Font size')
@@ -113,6 +115,85 @@ class App():
 
 	def open_add_entry(self):
 		self.root.showSubWindow('Add Entry')
+
+	def open_chg_entry(self):
+		self.root.showSubWindow('Edit Entry')
+
+	def window_chg_entry(self):
+		self.root.startSubWindow('Edit Entry', modal=True)
+		self.root.setSize(500, 700)
+		self.root.setBg('LIGHT BLUE', tint=True)
+		self.root.setFg('BLACK')
+		self.root.setStretch('both')
+		self.root.setGuiPadding(5, 5)
+
+		self.root.addLabel('lbl', 'Edit Entry:', row=0, column=0, colspan=3)
+		self.root.addHorizontalSeparator(row=1, column=0, colspan=3)
+		
+		self.root.addLabelEntry('Title: \t \t', row=2, column=0, colspan=6)
+		self.root.addLabelEntry('Author: \t \t', row=3, column=0, colspan=6)
+		dates = list()
+		for i in range(1900, 2019):
+			dates.append(i)
+		self.root.addLabelSpinBox('Date: \t \t', dates, row=4, column=0, colspan=6)
+		self.root.addLabelEntry('Owner: \t \t', row=5, column=0, colspan=6)
+		self.root.addLabelNumericEntry('Pages: \t \t', row=6, column=0, colspan=6)
+		self.root.addLabelEntry('Genre: \t \t', row=7, column=0, colspan=6)
+		self.root.addLabelEntry('Language: \t', row=8, column=0, colspan=6)
+		self.root.addLabelEntry('Publisher: \t', row=9, column=0, colspan=6)
+		self.root.addLabelNumericEntry('Price: \t \t', row=10, column=0, colspan=6)
+
+		util = Util()
+		entry_string = self.root.getListBox('Entries')[0]
+		entry_list = self.__generate_entry_list(self.lib.get_lib())
+		index = entry_list.index(entry_string)	
+		sorted_lib = util.sort_dict(self.lib.get_lib(), by=self.root.getOptionBox('Sort by: '))
+
+		entry = sorted_lib[index]
+		
+		self.root.setEntry('Title: \t \t', entry['title'])
+		self.root.setEntry('Author: \t \t', entry['author'])
+		self.root.setEntry('Owner: \t \t', entry['owner'])
+		self.root.setEntry('Pages: \t \t', entry['pages'])
+		self.root.setEntry('Genre: \t \t', entry['genre'])
+		self.root.setEntry('Language: \t', entry['language'])
+		self.root.setEntry('Publisher: \t', entry['publisher'])
+		self.root.setEntry('Price: \t \t', entry['price'])
+		self.root.setSpinBox('Date: \t \t', entry['date'])
+
+		self.root.addButton('Cancel', self.__hide_chgEntry, row=12, column=5)
+		self.root.addButton('Save change', self.__chg_Entry, row=12, column=0)
+		
+		self.root.stopSubWindow()	
+	
+	def __chg_Entry(self):
+		util = Util()
+		entry_string = self.root.getListBox('Entries')[0]
+		entry_list = self.__generate_entry_list(self.lib.get_lib())
+		index = entry_list.index(entry_string)	
+		sorted_lib = util.sort_dict(self.lib.get_lib(), by=self.root.getOptionBox('Sort by: '))
+
+		entry_id = sorted_lib[index]['id']
+		self.lib.remove(entry_id)
+		
+		entry_dict = dict()
+		entry_dict['title'] = self.__entry_ex('Title: \t \t')
+		entry_dict['author'] = self.__entry_ex('Author: \t \t')
+		entry_dict['owner'] = self.__entry_ex('Owner: \t \t')
+		entry_dict['pages'] = int(self.__entry_ex('Pages: \t \t', typ='int'))
+		entry_dict['language'] = self.__entry_ex('Language: \t')
+		entry_dict['publisher'] = self.__entry_ex('Publisher: \t')
+		entry_dict['price'] = float(self.__entry_ex('Price: \t \t', typ='int'))
+		entry_dict['date'] = int(self.root.getSpinBox('Date: \t \t'))
+		genre = []
+		for item in self.root.getEntry('Genre: \t \t').split(', '):
+			genre.append(item)
+		entry_dict['genre'] = genre
+
+		self.root.infoBox('Changed entry', 'Successfully edited entry!')
+		self.lib.add_entry(entry_dict)
+		self.update_listbox()
+		self.root.hideSubWindow('Edit Entry')
 
 	def window_add_entry(self):
 		self.root.startSubWindow('Add Entry', modal=True)
@@ -232,6 +313,10 @@ class App():
 	def __check_stop(self):
 		if self.root.yesNoBox('Confirm Exit', 'Are you sure you want to exit the application?'):
 			self.root.stop()
+
+	def __hide_chgEntry(self):
+		self.root.hideSubWindow('Edit Entry')
+		self.update_listbox()
 
 	def __hide_addEntry(self):
 		self.root.hideSubWindow('Add Entry')

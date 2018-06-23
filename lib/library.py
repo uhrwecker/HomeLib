@@ -22,9 +22,9 @@ class Library():
 		self.library_dict[ent_dict['id']] = ent_dict
 		self.library_obj[ent_dict['id']] = entry
 
-	def edit_entry(self, entry_id, attr, change):
-		self.library_dict[entry_id][attr] = change
-		self.library_obj[entry_id].set_attr(self.library_dict[entry_dict])
+	def edit_entry(self, entry_id, lib):
+		self.library_dict[entry_id] = lib
+		self.library_obj[entry_id].set_attr(self.library_dict[entry_id])
 	
 	def remove(self, entry_id):
 		del self.library_dict[entry_id], self.library_obj[entry_id]
