@@ -58,7 +58,7 @@ class Library():
 		return(all_states)
 
 	def get_lib(self):
-		return(self.library_obj)
+		return(self.library_dict)
 	
 	def init_library_dict(self, fp):
 		fobj = open(fp, 'r')

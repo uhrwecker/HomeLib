@@ -2,7 +2,7 @@ class Util():
 	def __init__(self):
 		self.a = 0
 
-	def sort_dict(self, dic, by='title')
+	def sort_dict(self, dic, by='title'):
 		sort_list = list()
 		by_list = list()
 		for ent_id in dic:

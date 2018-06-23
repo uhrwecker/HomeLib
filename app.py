@@ -1,4 +1,5 @@
 import lib.library as library
+from utils.utils import *
 import appJar as appjar
 import os
 
@@ -15,8 +16,10 @@ class App():
 		app.setTitle('HomeLib - library software for home usage')
 		app.setResizable(canResize=True)
 		app.setLocation('CENTER')
-		app.setFg('WHITE')
-		app.setBg('BLUE', tint=True)
+		app.setFg('BLACK')
+		app.setBg('LIGHT BLUE', tint=True)
+		app.setGuiPadding(5, 5)
+		app.setStretch('both')
 
 		app.createMenu('File')
 		app.addMenuItem('File', 'Save', func=self.__save_library, shortcut='Control-s')
@@ -26,6 +29,44 @@ class App():
 
 		app.createMenu('Edit')
 		app.addMenuItem('Edit', 'Add Entry', func=self.open_add_entry, shortcut='Control-d')
+
+		app.createMenu('View')
+		app.addSubMenu('View', 'Font size')
+		app.addMenuItem('Font size', 'Increase font size', func=app.increaseFont, shortcut='Control-Shift-i')
+		app.addMenuItem('Font size', 'Decrease font size', func=app.decreaseFont, shortcut='Control-Shift-l')
+
+		# top left
+		sort_keys = ['title', 'author', 'date', 'owner', 'pages', 'genre', 'language', 'publisher', 'price']
+		app.startLabelFrame('Search & Select', row=0, column=0, colspan=2)
+		app.addLabelOptionBox('Sort by: ', sort_keys, default=sort_keys[0], row=1, column=0, colspan=2)
+		app.addButton('Update', self.lib.save_lib, row=1, column=2)
+
+		# top right
+		search_keys = sort_keys
+		search_keys.append('all')
+		app.addLabelOptionBox('Search by: ', search_keys, default=search_keys[-1], row=0, column=3, colspan=2)
+		app.addLabelEntry('Search: ', row=1, column=3, colspan=2)
+		app.addButton('Go!', self.lib.save_lib, row=1, column=6)
+		app.stopLabelFrame()
+
+		
+		# bottom right
+		app.startLabelFrame('Entry List', row=1, column=0, rowspan=8)
+		app.setSticky('nesw')
+		entry_list = self.__generate_entry_list(self.lib)
+		app.addListBox('Entries', entry_list, colspan=5)
+		app.selectListItem('Entries', entry_list[0])
+		app.setListBoxRows('Entries', 10)
+		app.stopLabelFrame()
+		#app.stopScrollPane()
+
+
+		# bottom right#
+		app.startLabelFrame('Entry', row=1, column=1, rowspan=8)
+		app.addLabel(app.getListBox('Entries')[0], row=3, column=3, colspan=3)
+		app.stopLabelFrame()
+
+		
 
 	def run(self):
 		self.root.go()
@@ -81,6 +122,16 @@ class App():
 		if not self.root.questionBox('Added Entry', 'Succesfully added entry to library! Want to add another entry?'):
 			self.root.hideSubWindow('Add Entry')
 		self.root.info('Added Entry with title {}'.format(entry_dict['title']))
+
+	def __generate_entry_list(self, lib):
+		libra = lib.get_lib()
+		util = Util()
+		sorted_lib = util.sort_dict(libra)
+		ent_list = list()
+		for item in sorted_lib:
+			string = item['title'] + ' by ' + item['author'] + ', ' + str(item['date'])
+			ent_list.append(string)
+		return(ent_list)
 
 	def __load_library(self):
 		current_path = os.getcwd()
