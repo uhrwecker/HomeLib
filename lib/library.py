@@ -26,7 +26,7 @@ class Library():
 		self.library_dict[entry_id][attr] = change
 		self.library_obj[entry_id].set_attr(self.library_dict[entry_dict])
 	
-	def remove(entry_id):
+	def remove(self, entry_id):
 		del self.library_dict[entry_id], self.library_obj[entry_id]
 
 	def save_lib(self, fp):
@@ -44,16 +44,11 @@ class Library():
 			if by == 'all':
 				for attr in self.library_dict[entry_id]:
 					if str(search) in str(self.library_dict[entry_id][attr]):
-						all_states.append((entry_id, attr, self.library_obj[entry_id]))
+						all_states.append(self.library_dict[entry_id])
 						
 			else:
-				if str(search) in str(self.library[entry_id][by]):
-						all_states.append((entry_id, by, self.library_obj[entry_id]))
-			
-		if self.verbose:
-			for item in all_states:
-				print('Following entry found containing {} in {}:'.format(search, item[1]))
-				self._print_entry(item[-1])
+				if str(search) in str(self.library_dict[entry_id][by]):
+						all_states.append(self.library_dict[entry_id])
 
 		return(all_states)
 

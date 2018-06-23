@@ -1,14 +1,13 @@
 class Entry():
 	
-	def __init__(self, title='', author='', date=0, owner='', pages=0, 
-		     genre=[], language='Deutsch', publisher='', price=0.):
+	def __init__(self, title='None', author='None', date=0, owner='None', pages=0, 
+		     genre=['None'], language='Deutsch', publisher='None', price=0.):
 		self.title = title
 		self.author = author
 		self.date = date
 		self.owner = owner
 		self.pages = pages
 		self.genre = genre
-		self.pages = pages
 		self.language = language
 		self.publisher = publisher
 		self.price = price

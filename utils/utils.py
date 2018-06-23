@@ -7,7 +7,7 @@ class Util():
 		by_list = list()
 		for ent_id in dic:
 			by_list.append(dic[ent_id][by])
-		sorted(by_list)
+		by_list.sort()
 		for item in by_list:
 			for ent_id in dic:
 				if dic[ent_id][by] == item and not dic[ent_id] in sort_list:
